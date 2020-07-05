@@ -1,0 +1,614 @@
+[
+  {
+    "name": "Tanzania, United Republic of",
+    "topLevelDomain": [
+      ".tz"
+    ],
+    "alpha2Code": "TZ",
+    "alpha3Code": "TZA",
+    "callingCodes": [
+      "255"
+    ],
+    "capital": "Dodoma",
+    "altSpellings": [
+      "TZ",
+      "United Republic of Tanzania",
+      "Jamhuri ya Muungano wa Tanzania"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 55155000,
+    "latlng": [
+      -6,
+      35
+    ],
+    "demonym": "Tanzanian",
+    "area": 945087,
+    "gini": 37.6,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "borders": [
+      "BDI",
+      "COD",
+      "KEN",
+      "MWI",
+      "MOZ",
+      "RWA",
+      "UGA",
+      "ZMB"
+    ],
+    "nativeName": "Tanzania",
+    "numericCode": "834",
+    "currencies": [
+      {
+        "code": "TZS",
+        "name": "Tanzanian shilling",
+        "symbol": "Sh"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "sw",
+        "iso639_2": "swa",
+        "name": "Swahili",
+        "nativeName": "Kiswahili"
+      },
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "translations": {
+      "de": "Tansania",
+      "es": "Tanzania",
+      "fr": "Tanzanie",
+      "ja": "タンザニア",
+      "it": "Tanzania",
+      "br": "Tanzânia",
+      "pt": "Tanzânia",
+      "nl": "Tanzania",
+      "hr": "Tanzanija",
+      "fa": "تانزانیا"
+    },
+    "flag": "https://restcountries.eu/data/tza.svg",
+    "regionalBlocs": [
+      {
+        "acronym": "AU",
+        "name": "African Union",
+        "otherAcronyms": [],
+        "otherNames": [
+          "الاتحاد الأفريقي",
+          "Union africaine",
+          "União Africana",
+          "Unión Africana",
+          "Umoja wa Afrika"
+        ]
+      }
+    ],
+    "cioc": "TAN"
+  },
+  {
+    "name": "Thailand",
+    "topLevelDomain": [
+      ".th"
+    ],
+    "alpha2Code": "TH",
+    "alpha3Code": "THA",
+    "callingCodes": [
+      "66"
+    ],
+    "capital": "Bangkok",
+    "altSpellings": [
+      "TH",
+      "Prathet",
+      "Thai",
+      "Kingdom of Thailand",
+      "ราชอาณาจักรไทย",
+      "Ratcha Anachak Thai"
+    ],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 65327652,
+    "latlng": [
+      15,
+      100
+    ],
+    "demonym": "Thai",
+    "area": 513120,
+    "gini": 40,
+    "timezones": [
+      "UTC+07:00"
+    ],
+    "borders": [
+      "MMR",
+      "KHM",
+      "LAO",
+      "MYS"
+    ],
+    "nativeName": "ประเทศไทย",
+    "numericCode": "764",
+    "currencies": [
+      {
+        "code": "THB",
+        "name": "Thai baht",
+        "symbol": "฿"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "th",
+        "iso639_2": "tha",
+        "name": "Thai",
+        "nativeName": "ไทย"
+      }
+    ],
+    "translations": {
+      "de": "Thailand",
+      "es": "Tailandia",
+      "fr": "Thaïlande",
+      "ja": "タイ",
+      "it": "Tailandia",
+      "br": "Tailândia",
+      "pt": "Tailândia",
+      "nl": "Thailand",
+      "hr": "Tajland",
+      "fa": "تایلند"
+    },
+    "flag": "https://restcountries.eu/data/tha.svg",
+    "regionalBlocs": [
+      {
+        "acronym": "ASEAN",
+        "name": "Association of Southeast Asian Nations",
+        "otherAcronyms": [],
+        "otherNames": []
+      }
+    ],
+    "cioc": "THA"
+  },
+  {
+    "name": "Timor-Leste",
+    "topLevelDomain": [
+      ".tl"
+    ],
+    "alpha2Code": "TL",
+    "alpha3Code": "TLS",
+    "callingCodes": [
+      "670"
+    ],
+    "capital": "Dili",
+    "altSpellings": [
+      "TL",
+      "East Timor",
+      "Democratic Republic of Timor-Leste",
+      "República Democrática de Timor-Leste",
+      "Repúblika Demokrátika Timór-Leste"
+    ],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 1167242,
+    "latlng": [
+      -8.83333333,
+      125.91666666
+    ],
+    "demonym": "East Timorese",
+    "area": 14874,
+    "gini": 31.9,
+    "timezones": [
+      "UTC+09:00"
+    ],
+    "borders": [
+      "IDN"
+    ],
+    "nativeName": "Timor-Leste",
+    "numericCode": "626",
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      },
+      {
+        "code": null,
+        "name": null,
+        "symbol": null
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "pt",
+        "iso639_2": "por",
+        "name": "Portuguese",
+        "nativeName": "Português"
+      }
+    ],
+    "translations": {
+      "de": "Timor-Leste",
+      "es": "Timor Oriental",
+      "fr": "Timor oriental",
+      "ja": "東ティモール",
+      "it": "Timor Est",
+      "br": "Timor Leste",
+      "pt": "Timor Leste",
+      "nl": "Oost-Timor",
+      "hr": "Istočni Timor",
+      "fa": "تیمور شرقی"
+    },
+    "flag": "https://restcountries.eu/data/tls.svg",
+    "regionalBlocs": [],
+    "cioc": "TLS"
+  },
+  {
+    "name": "Togo",
+    "topLevelDomain": [
+      ".tg"
+    ],
+    "alpha2Code": "TG",
+    "alpha3Code": "TGO",
+    "callingCodes": [
+      "228"
+    ],
+    "capital": "Lomé",
+    "altSpellings": [
+      "TG",
+      "Togolese",
+      "Togolese Republic",
+      "République Togolaise"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 7143000,
+    "latlng": [
+      8,
+      1.16666666
+    ],
+    "demonym": "Togolese",
+    "area": 56785,
+    "gini": 34.4,
+    "timezones": [
+      "UTC"
+    ],
+    "borders": [
+      "BEN",
+      "BFA",
+      "GHA"
+    ],
+    "nativeName": "Togo",
+    "numericCode": "768",
+    "currencies": [
+      {
+        "code": "XOF",
+        "name": "West African CFA franc",
+        "symbol": "Fr"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "fr",
+        "iso639_2": "fra",
+        "name": "French",
+        "nativeName": "français"
+      }
+    ],
+    "translations": {
+      "de": "Togo",
+      "es": "Togo",
+      "fr": "Togo",
+      "ja": "トーゴ",
+      "it": "Togo",
+      "br": "Togo",
+      "pt": "Togo",
+      "nl": "Togo",
+      "hr": "Togo",
+      "fa": "توگو"
+    },
+    "flag": "https://restcountries.eu/data/tgo.svg",
+    "regionalBlocs": [
+      {
+        "acronym": "AU",
+        "name": "African Union",
+        "otherAcronyms": [],
+        "otherNames": [
+          "الاتحاد الأفريقي",
+          "Union africaine",
+          "União Africana",
+          "Unión Africana",
+          "Umoja wa Afrika"
+        ]
+      }
+    ],
+    "cioc": "TOG"
+  },
+  {
+    "name": "Tokelau",
+    "topLevelDomain": [
+      ".tk"
+    ],
+    "alpha2Code": "TK",
+    "alpha3Code": "TKL",
+    "callingCodes": [
+      "690"
+    ],
+    "capital": "Fakaofo",
+    "altSpellings": [
+      "TK"
+    ],
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "population": 1411,
+    "latlng": [
+      -9,
+      -172
+    ],
+    "demonym": "Tokelauan",
+    "area": 12,
+    "gini": null,
+    "timezones": [
+      "UTC+13:00"
+    ],
+    "borders": [],
+    "nativeName": "Tokelau",
+    "numericCode": "772",
+    "currencies": [
+      {
+        "code": "NZD",
+        "name": "New Zealand dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "translations": {
+      "de": "Tokelau",
+      "es": "Islas Tokelau",
+      "fr": "Tokelau",
+      "ja": "トケラウ",
+      "it": "Isole Tokelau",
+      "br": "Tokelau",
+      "pt": "Toquelau",
+      "nl": "Tokelau",
+      "hr": "Tokelau",
+      "fa": "توکلائو"
+    },
+    "flag": "https://restcountries.eu/data/tkl.svg",
+    "regionalBlocs": [],
+    "cioc": ""
+  },
+  {
+    "name": "Tonga",
+    "topLevelDomain": [
+      ".to"
+    ],
+    "alpha2Code": "TO",
+    "alpha3Code": "TON",
+    "callingCodes": [
+      "676"
+    ],
+    "capital": "Nuku'alofa",
+    "altSpellings": [
+      "TO"
+    ],
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "population": 103252,
+    "latlng": [
+      -20,
+      -175
+    ],
+    "demonym": "Tongan",
+    "area": 747,
+    "gini": null,
+    "timezones": [
+      "UTC+13:00"
+    ],
+    "borders": [],
+    "nativeName": "Tonga",
+    "numericCode": "776",
+    "currencies": [
+      {
+        "code": "TOP",
+        "name": "Tongan paʻanga",
+        "symbol": "T$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      },
+      {
+        "iso639_1": "to",
+        "iso639_2": "ton",
+        "name": "Tonga (Tonga Islands)",
+        "nativeName": "faka Tonga"
+      }
+    ],
+    "translations": {
+      "de": "Tonga",
+      "es": "Tonga",
+      "fr": "Tonga",
+      "ja": "トンガ",
+      "it": "Tonga",
+      "br": "Tonga",
+      "pt": "Tonga",
+      "nl": "Tonga",
+      "hr": "Tonga",
+      "fa": "تونگا"
+    },
+    "flag": "https://restcountries.eu/data/ton.svg",
+    "regionalBlocs": [],
+    "cioc": "TGA"
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "topLevelDomain": [
+      ".tt"
+    ],
+    "alpha2Code": "TT",
+    "alpha3Code": "TTO",
+    "callingCodes": [
+      "1868"
+    ],
+    "capital": "Port of Spain",
+    "altSpellings": [
+      "TT",
+      "Republic of Trinidad and Tobago"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 1349667,
+    "latlng": [
+      11,
+      -61
+    ],
+    "demonym": "Trinidadian",
+    "area": 5130,
+    "gini": 40.3,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "borders": [],
+    "nativeName": "Trinidad and Tobago",
+    "numericCode": "780",
+    "currencies": [
+      {
+        "code": "TTD",
+        "name": "Trinidad and Tobago dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "translations": {
+      "de": "Trinidad und Tobago",
+      "es": "Trinidad y Tobago",
+      "fr": "Trinité et Tobago",
+      "ja": "トリニダード・トバゴ",
+      "it": "Trinidad e Tobago",
+      "br": "Trinidad e Tobago",
+      "pt": "Trindade e Tobago",
+      "nl": "Trinidad en Tobago",
+      "hr": "Trinidad i Tobago",
+      "fa": "ترینیداد و توباگو"
+    },
+    "flag": "https://restcountries.eu/data/tto.svg",
+    "regionalBlocs": [
+      {
+        "acronym": "CARICOM",
+        "name": "Caribbean Community",
+        "otherAcronyms": [],
+        "otherNames": [
+          "Comunidad del Caribe",
+          "Communauté Caribéenne",
+          "Caribische Gemeenschap"
+        ]
+      }
+    ],
+    "cioc": "TTO"
+  },
+  {
+    "name": "Tunisia",
+    "topLevelDomain": [
+      ".tn"
+    ],
+    "alpha2Code": "TN",
+    "alpha3Code": "TUN",
+    "callingCodes": [
+      "216"
+    ],
+    "capital": "Tunis",
+    "altSpellings": [
+      "TN",
+      "Republic of Tunisia",
+      "al-Jumhūriyyah at-Tūnisiyyah"
+    ],
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 11154400,
+    "latlng": [
+      34,
+      9
+    ],
+    "demonym": "Tunisian",
+    "area": 163610,
+    "gini": 41.4,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "borders": [
+      "DZA",
+      "LBY"
+    ],
+    "nativeName": "تونس",
+    "numericCode": "788",
+    "currencies": [
+      {
+        "code": "TND",
+        "name": "Tunisian dinar",
+        "symbol": "د.ت"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "ar",
+        "iso639_2": "ara",
+        "name": "Arabic",
+        "nativeName": "العربية"
+      }
+    ],
+    "translations": {
+      "de": "Tunesien",
+      "es": "Túnez",
+      "fr": "Tunisie",
+      "ja": "チュニジア",
+      "it": "Tunisia",
+      "br": "Tunísia",
+      "pt": "Tunísia",
+      "nl": "Tunesië",
+      "hr": "Tunis",
+      "fa": "تونس"
+    },
+    "flag": "https://restcountries.eu/data/tun.svg",
+    "regionalBlocs": [
+      {
+        "acronym": "AU",
+        "name": "African Union",
+        "otherAcronyms": [],
+        "otherNames": [
+          "الاتحاد الأفريقي",
+          "Union africaine",
+          "União Africana",
+          "Unión Africana",
+          "Umoja wa Afrika"
+        ]
+      },
+      {
+        "acronym": "AL",
+        "name": "Arab League",
+        "otherAcronyms": [],
+        "otherNames": [
+          "جامعة الدول العربية",
+          "Jāmiʻat ad-Duwal al-ʻArabīyah",
+          "League of Arab States"
+        ]
+      }
+    ],
+    "cioc": "TUN"
+  }
+]
