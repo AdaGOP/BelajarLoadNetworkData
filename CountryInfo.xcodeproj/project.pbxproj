@@ -10,6 +10,8 @@
 		1B9110CE24B1A19700FF258D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9110CD24B1A19700FF258D /* SecondViewController.swift */; };
 		1B9110D424B1A42D00FF258D /* FirstCountryTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9110D224B1A42D00FF258D /* FirstCountryTable.storyboard */; };
 		1B9110D624B1A46800FF258D /* SecondCountryTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9110D524B1A46800FF258D /* SecondCountryTable.storyboard */; };
+		1B9110D924B1C01B00FF258D /* SecondCountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9110D724B1C01B00FF258D /* SecondCountryTableViewCell.swift */; };
+		1B9110DA24B1C01B00FF258D /* SecondCountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B9110D824B1C01B00FF258D /* SecondCountryTableViewCell.xib */; };
 		1BACB70B24B0F81E0075119F /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACB70924B0F81E0075119F /* CountryTableViewCell.swift */; };
 		1BACB70C24B0F81E0075119F /* CountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BACB70A24B0F81E0075119F /* CountryTableViewCell.xib */; };
 		1BAEDE3E24AF3E7C00523AC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAEDE3D24AF3E7C00523AC2 /* AppDelegate.swift */; };
@@ -26,6 +28,8 @@
 		1B9110CD24B1A19700FF258D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		1B9110D324B1A42D00FF258D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CountryInfo/View/Base.lproj/FirstCountryTable.storyboard; sourceTree = "<group>"; };
 		1B9110D524B1A46800FF258D /* SecondCountryTable.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SecondCountryTable.storyboard; sourceTree = "<group>"; };
+		1B9110D724B1C01B00FF258D /* SecondCountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCountryTableViewCell.swift; sourceTree = "<group>"; };
+		1B9110D824B1C01B00FF258D /* SecondCountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCountryTableViewCell.xib; sourceTree = "<group>"; };
 		1BACB70924B0F81E0075119F /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		1BACB70A24B0F81E0075119F /* CountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableViewCell.xib; sourceTree = "<group>"; };
 		1BAEDE3A24AF3E7C00523AC2 /* CountryInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +58,7 @@
 		1B9110CF24B1A1B200FF258D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B9110D724B1C01B00FF258D /* SecondCountryTableViewCell.swift */,
 				1BACB70924B0F81E0075119F /* CountryTableViewCell.swift */,
 				1BAEDE4124AF3E7C00523AC2 /* FirstViewController.swift */,
 				1B9110CD24B1A19700FF258D /* SecondViewController.swift */,
@@ -69,6 +74,7 @@
 				1B9110D524B1A46800FF258D /* SecondCountryTable.storyboard */,
 				1BAEDE4824AF3E7F00523AC2 /* LaunchScreen.storyboard */,
 				1BACB70A24B0F81E0075119F /* CountryTableViewCell.xib */,
+				1B9110D824B1C01B00FF258D /* SecondCountryTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,6 +179,7 @@
 				1BAEDE4A24AF3E7F00523AC2 /* LaunchScreen.storyboard in Resources */,
 				1B9110D624B1A46800FF258D /* SecondCountryTable.storyboard in Resources */,
 				1BAEDE4724AF3E7F00523AC2 /* Assets.xcassets in Resources */,
+				1B9110DA24B1C01B00FF258D /* SecondCountryTableViewCell.xib in Resources */,
 				1BACB70C24B0F81E0075119F /* CountryTableViewCell.xib in Resources */,
 				1B9110D424B1A42D00FF258D /* FirstCountryTable.storyboard in Resources */,
 				1BD4825724B0E1D50084259D /* Countries.json in Resources */,
@@ -193,6 +200,7 @@
 				1B9110CE24B1A19700FF258D /* SecondViewController.swift in Sources */,
 				1BAEDE4024AF3E7C00523AC2 /* SceneDelegate.swift in Sources */,
 				1BACB70B24B0F81E0075119F /* CountryTableViewCell.swift in Sources */,
+				1B9110D924B1C01B00FF258D /* SecondCountryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -330,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -347,6 +355,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KHN5V927Z7;
 				INFOPLIST_FILE = CountryInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,6 +374,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KHN5V927Z7;
 				INFOPLIST_FILE = CountryInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
