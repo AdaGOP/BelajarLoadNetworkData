@@ -38,7 +38,6 @@
                     <constraint firstAttribute="bottom" secondItem="uOL-l3-Jd4" secondAttribute="bottom" id="WvD-W8-wx3"/>
                     <constraint firstItem="uOL-l3-Jd4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jGu-jo-xtf"/>
                     <constraint firstItem="NM3-aK-kty" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="mxw-uG-K03"/>
-                    <constraint firstItem="NM3-aK-kty" firstAttribute="centerX" secondItem="uOL-l3-Jd4" secondAttribute="centerX" id="yvz-LC-6qt"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

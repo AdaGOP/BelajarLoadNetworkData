@@ -12,6 +12,7 @@
 		1B9110D624B1A46800FF258D /* SecondCountryTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9110D524B1A46800FF258D /* SecondCountryTable.storyboard */; };
 		1B9110D924B1C01B00FF258D /* SecondCountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9110D724B1C01B00FF258D /* SecondCountryTableViewCell.swift */; };
 		1B9110DA24B1C01B00FF258D /* SecondCountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B9110D824B1C01B00FF258D /* SecondCountryTableViewCell.xib */; };
+		1B9110DD24B218AC00FF258D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9110DC24B218AC00FF258D /* WebKit.framework */; };
 		1BACB70B24B0F81E0075119F /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACB70924B0F81E0075119F /* CountryTableViewCell.swift */; };
 		1BACB70C24B0F81E0075119F /* CountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BACB70A24B0F81E0075119F /* CountryTableViewCell.xib */; };
 		1BAEDE3E24AF3E7C00523AC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAEDE3D24AF3E7C00523AC2 /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 		1B9110D524B1A46800FF258D /* SecondCountryTable.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SecondCountryTable.storyboard; sourceTree = "<group>"; };
 		1B9110D724B1C01B00FF258D /* SecondCountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCountryTableViewCell.swift; sourceTree = "<group>"; };
 		1B9110D824B1C01B00FF258D /* SecondCountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCountryTableViewCell.xib; sourceTree = "<group>"; };
+		1B9110DC24B218AC00FF258D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		1BACB70924B0F81E0075119F /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		1BACB70A24B0F81E0075119F /* CountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableViewCell.xib; sourceTree = "<group>"; };
 		1BAEDE3A24AF3E7C00523AC2 /* CountryInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9110DD24B218AC00FF258D /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,11 +90,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		1B9110DB24B218AC00FF258D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B9110DC24B218AC00FF258D /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1BAEDE3124AF3E7C00523AC2 = {
 			isa = PBXGroup;
 			children = (
 				1BAEDE3C24AF3E7C00523AC2 /* CountryInfo */,
 				1BAEDE3B24AF3E7C00523AC2 /* Products */,
+				1B9110DB24B218AC00FF258D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

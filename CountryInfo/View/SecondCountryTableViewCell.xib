@@ -16,22 +16,27 @@
                 <rect key="frame" x="0.0" y="0.0" width="316" height="161"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rSn-l5-aHb">
+                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wnu-XW-74X">
                         <rect key="frame" x="16" y="16" width="284" height="129"/>
-                    </imageView>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <wkWebViewConfiguration key="configuration">
+                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                            <wkPreferences key="preferences"/>
+                        </wkWebViewConfiguration>
+                    </wkWebView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="rSn-l5-aHb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Al0-GZ-jc0"/>
-                    <constraint firstAttribute="bottom" secondItem="rSn-l5-aHb" secondAttribute="bottom" constant="16" id="MpT-YU-MHL"/>
-                    <constraint firstAttribute="trailing" secondItem="rSn-l5-aHb" secondAttribute="trailing" constant="16" id="YXM-6U-1mh"/>
-                    <constraint firstItem="rSn-l5-aHb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="hM1-BT-q1l"/>
+                    <constraint firstAttribute="trailing" secondItem="Wnu-XW-74X" secondAttribute="trailing" constant="16" id="JsC-t6-R9l"/>
+                    <constraint firstItem="Wnu-XW-74X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="TsW-4j-yM6"/>
+                    <constraint firstAttribute="bottom" secondItem="Wnu-XW-74X" secondAttribute="bottom" constant="16" id="eVV-Ip-4DE"/>
+                    <constraint firstItem="Wnu-XW-74X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="jgW-5a-czz"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="flagImage" destination="rSn-l5-aHb" id="NId-1i-K74"/>
+                <outlet property="flagWebView" destination="Wnu-XW-74X" id="uIv-Rw-D3g"/>
             </connections>
-            <point key="canvasLocation" x="128.98550724637681" y="139.62053571428569"/>
+            <point key="canvasLocation" x="128.98550724637681" y="138.95089285714286"/>
         </tableViewCell>
     </objects>
 </document>

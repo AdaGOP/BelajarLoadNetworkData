@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import WebKit
 
 class SecondCountryTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var flagImage: UIImageView!
+    
+    @IBOutlet weak var flagWebView: WKWebView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        flagWebView.contentMode = .scaleAspectFill
+        flagWebView.scrollView.isScrollEnabled = false
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
