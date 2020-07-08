@@ -12,12 +12,14 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Sxy-rm-CtM" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bYo-yj-dzE">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="45B-nZ-bJW" kind="relationship" relationship="viewControllers" id="1qA-MH-D8Y"/>
                         <segue destination="rq4-pD-pQd" kind="relationship" relationship="viewControllers" id="lBx-0R-rxy"/>
+                        <segue destination="dPD-8t-tZg" kind="relationship" relationship="viewControllers" id="ONu-3G-XLl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJo-VL-G8O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -32,7 +34,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BlE-gX-N7B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1104" y="101"/>
+            <point key="canvasLocation" x="937" y="-256"/>
         </scene>
         <!--SecondCountryTable-->
         <scene sceneID="1EL-Hp-jpn">
@@ -43,6 +45,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y36-d7-GaH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="300" y="-513"/>
+        </scene>
+        <!--ThirdViewController-->
+        <scene sceneID="fgb-ed-5XI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ThirdViewController" id="dPD-8t-tZg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="6jt-PC-hd6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jG4-mG-HSK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="399"/>
         </scene>
     </scenes>
 </document>

@@ -23,6 +23,10 @@
 		1BAEDE4A24AF3E7F00523AC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BAEDE4824AF3E7F00523AC2 /* LaunchScreen.storyboard */; };
 		1BAEDE5224AF407000523AC2 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAEDE5124AF407000523AC2 /* CountryModel.swift */; };
 		1BD4825724B0E1D50084259D /* Countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BAEDE5324AF4A3500523AC2 /* Countries.json */; };
+		1BF58A3024B5ECD90057F109 /* ThirdViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF58A2E24B5ECD90057F109 /* ThirdViewController.storyboard */; };
+		1BF58A3224B5ED260057F109 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF58A3124B5ED260057F109 /* ThirdViewController.swift */; };
+		1BF58A3424B612E20057F109 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF58A3324B612E20057F109 /* APIService.swift */; };
+		1BF58A3624B631780057F109 /* ThirdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF58A3524B631780057F109 /* ThirdDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		1BAEDE4B24AF3E7F00523AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BAEDE5124AF407000523AC2 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		1BAEDE5324AF4A3500523AC2 /* Countries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Countries.json; sourceTree = "<group>"; };
+		1BF58A2F24B5ECD90057F109 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CountryInfo/View/Base.lproj/ThirdViewController.storyboard; sourceTree = "<group>"; };
+		1BF58A3124B5ED260057F109 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		1BF58A3324B612E20057F109 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		1BF58A3524B631780057F109 /* ThirdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,8 @@
 				1BACB70924B0F81E0075119F /* CountryTableViewCell.swift */,
 				1BAEDE4124AF3E7C00523AC2 /* FirstViewController.swift */,
 				1B9110CD24B1A19700FF258D /* SecondViewController.swift */,
+				1BF58A3124B5ED260057F109 /* ThirdViewController.swift */,
+				1BF58A3524B631780057F109 /* ThirdDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -78,6 +88,7 @@
 				1BAEDE4824AF3E7F00523AC2 /* LaunchScreen.storyboard */,
 				1BACB70A24B0F81E0075119F /* CountryTableViewCell.xib */,
 				1B9110D824B1C01B00FF258D /* SecondCountryTableViewCell.xib */,
+				1BF58A2E24B5ECD90057F109 /* ThirdViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,6 +137,7 @@
 				1BAEDE3F24AF3E7C00523AC2 /* SceneDelegate.swift */,
 				1BAEDE4624AF3E7F00523AC2 /* Assets.xcassets */,
 				1BAEDE4B24AF3E7F00523AC2 /* Info.plist */,
+				1BF58A3324B612E20057F109 /* APIService.swift */,
 			);
 			path = CountryInfo;
 			sourceTree = "<group>";
@@ -194,6 +206,7 @@
 				1B9110DA24B1C01B00FF258D /* SecondCountryTableViewCell.xib in Resources */,
 				1BACB70C24B0F81E0075119F /* CountryTableViewCell.xib in Resources */,
 				1B9110D424B1A42D00FF258D /* FirstCountryTable.storyboard in Resources */,
+				1BF58A3024B5ECD90057F109 /* ThirdViewController.storyboard in Resources */,
 				1BD4825724B0E1D50084259D /* Countries.json in Resources */,
 				1BAEDE4524AF3E7C00523AC2 /* Main.storyboard in Resources */,
 			);
@@ -211,7 +224,10 @@
 				1BAEDE5224AF407000523AC2 /* CountryModel.swift in Sources */,
 				1B9110CE24B1A19700FF258D /* SecondViewController.swift in Sources */,
 				1BAEDE4024AF3E7C00523AC2 /* SceneDelegate.swift in Sources */,
+				1BF58A3624B631780057F109 /* ThirdDetailViewController.swift in Sources */,
 				1BACB70B24B0F81E0075119F /* CountryTableViewCell.swift in Sources */,
+				1BF58A3224B5ED260057F109 /* ThirdViewController.swift in Sources */,
+				1BF58A3424B612E20057F109 /* APIService.swift in Sources */,
 				1B9110D924B1C01B00FF258D /* SecondCountryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +257,14 @@
 				1BAEDE4924AF3E7F00523AC2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1BF58A2E24B5ECD90057F109 /* ThirdViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BF58A2F24B5ECD90057F109 /* Base */,
+			);
+			name = ThirdViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

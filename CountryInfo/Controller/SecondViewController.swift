@@ -69,7 +69,7 @@ class SecondViewController: UIViewController, UITableViewDelegate {
             //        let path = Bundle.main.path(forResource: "svgNameFileHere", ofType: "svg")!
             //        if path != "" {
             let fileURL:URL = URL(string: "https://restcountries.eu/data/ton.svg")!
-            let req = URLRequest(url: fileURL)
+//            let req = URLRequest(url: fileURL)
             //            self.myWeb.scalesPageToFit = false
             //            self.myWeb.loadRequest(req)
             //            if let request = URLRequest(url: fileURL), let svgString = try? String(contentsOf: request) {
@@ -79,8 +79,8 @@ class SecondViewController: UIViewController, UITableViewDelegate {
             self.myWeb.contentMode = .scaleAspectFit
             //            self.myWeb.load(req)
             self.myWeb.loadHTMLString(svgString!, baseURL: fileURL)
-        } catch {
-            
+        } catch let error {
+            print(error.localizedDescription)
         }
         //        }
         //        else {
@@ -90,11 +90,17 @@ class SecondViewController: UIViewController, UITableViewDelegate {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.title = "Sample Countries"
+    }
+    
+    
     private func parse(jsonData: Data) {
         do {
             let decodedData = try JSONDecoder().decode([CountryModel].self, from: jsonData)
             
-            self.countryData = (decodedData as? [CountryModel])!
+            self.countryData = (decodedData as [CountryModel])
             
             print(self.countryData.count)
             
@@ -103,9 +109,9 @@ class SecondViewController: UIViewController, UITableViewDelegate {
             }
             
             for item in decodedData {
-                print("Name: ", item.name)
-                print("Alpha2Code: ", item.alpha2Code)
-                print("Flag: ", item.flag)
+                print("Name: ", item.name as Any)
+                print("Alpha2Code: ", item.alpha2Code as Any)
+                print("Flag: ", item.flag as Any)
                 print("===================================")
             }
         } catch {
@@ -127,22 +133,22 @@ class SecondViewController: UIViewController, UITableViewDelegate {
         return nil
     }
     
-    private func loadJson(fromURLString urlString: String,
-                          completion: @escaping (Result<Data, Error>) -> Void) {
-        if let url = URL(string: urlString) {
-            let urlSession = URLSession(configuration: .default).dataTask(with: url) { (data, response, error) in
-                if let error = error {
-                    completion(.failure(error))
-                }
-                
-                if let data = data {
-                    completion(.success(data))
-                }
-            }
-            
-            urlSession.resume()
-        }
-    }
+//    private func loadJson(fromURLString urlString: String,
+//                          completion: @escaping (Result<Data, Error>) -> Void) {
+//        if let url = URL(string: urlString) {
+//            let urlSession = URLSession(configuration: .default).dataTask(with: url) { (data, response, error) in
+//                if let error = error {
+//                    completion(.failure(error))
+//                }
+//                
+//                if let data = data {
+//                    completion(.success(data))
+//                }
+//            }
+//            
+//            urlSession.resume()
+//        }
+//    }
 
     func fetchImage(from urlString: String, completionHandler: @escaping (_ data: Data?) -> ()) {
         let session = URLSession.shared
@@ -233,7 +239,7 @@ extension SecondViewController: UITableViewDataSource{
                             let svgString = try? String(contentsOf: fileURL)
                             //cell.flagWebView.contentMode = .scaleAspectFit
                             cell.flagWebView.loadHTMLString(svgString!, baseURL: fileURL)
-                        } catch {
+                        } catch let error {
                             print(error.localizedDescription)
                         }
                     }

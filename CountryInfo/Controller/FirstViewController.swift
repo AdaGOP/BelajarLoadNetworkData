@@ -23,6 +23,7 @@ class FirstViewController: UIViewController {
         countryTable.delegate = self
         countryTable.dataSource = self
         
+        
         countryTable.register(UINib(nibName: "CountryTableViewCell", bundle: nil), forCellReuseIdentifier: countryCellID)
         
         loadTableFromJson()
@@ -32,12 +33,17 @@ class FirstViewController: UIViewController {
 //        }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.title = "Countries"
+    }
+    
     private func parse(jsonData: Data) {
         do {
             let decodedData = try JSONDecoder().decode([CountryModel].self, from: jsonData)
             for item in decodedData {
-            print("Name: ", item.name)
-            print("Alpha2Code: ", item.alpha2Code)
+            print("Name: ", item.name as Any)
+            print("Alpha2Code: ", item.alpha2Code as Any)
             print("===================================")
             }
         } catch {
@@ -59,22 +65,22 @@ class FirstViewController: UIViewController {
         return nil
     }
     
-    private func loadJson(fromURLString urlString: String,
-                          completion: @escaping (Result<Data, Error>) -> Void) {
-        if let url = URL(string: urlString) {
-            let urlSession = URLSession(configuration: .default).dataTask(with: url) { (data, response, error) in
-                if let error = error {
-                    completion(.failure(error))
-                }
-                
-                if let data = data {
-                    completion(.success(data))
-                }
-            }
-            
-            urlSession.resume()
-        }
-    }
+//    private func loadJson(fromURLString urlString: String,
+//                          completion: @escaping (Result<Data, Error>) -> Void) {
+//        if let url = URL(string: urlString) {
+//            let urlSession = URLSession(configuration: .default).dataTask(with: url) { (data, response, error) in
+//                if let error = error {
+//                    completion(.failure(error))
+//                }
+//
+//                if let data = data {
+//                    completion(.success(data))
+//                }
+//            }
+//
+//            urlSession.resume()
+//        }
+//    }
     
     
     
@@ -97,7 +103,7 @@ class FirstViewController: UIViewController {
                 let json = try JSONDecoder().decode([CountryModel].self, from: data!)
                     //try JSONSerialization.jsonObject(with: data!, options: [])
                 //print(json)
-                self.countryData = (json as? [CountryModel])!
+                self.countryData = (json as [CountryModel])
                 
                 print(self.countryData.count)
                 
@@ -150,30 +156,16 @@ extension FirstViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = countryTable.dequeueReusableCell(withIdentifier: countryCellID, for: indexPath) as? CountryTableViewCell {
             if countryData.count > 0 {
-                if let name = countryData[indexPath.row].name, let flagStr = countryData[indexPath.row].flag {
+                if let name = countryData[indexPath.row].name {
                     //cell.textLabel?.text = name
                     cell.nameLabel.text = name
                     //cell.setImageToImageView(imageURLString: flagStr)
-                    fetchImage(from: flagStr) { (imageData) in
-                        if let img = imageData {
-                            // referenced imageView from main thread
-                            // as iOS SDK warns not to use images from
-                            // a background thread
-                            DispatchQueue.main.async {
-                                cell.flagImageView.image = UIImage(data: img)
-                            }
-                        } else {
-                                // show as an alert if you want to
-                            print("Error loading image");
-                        }
-                    }
+                 }
                 }
-            }
             return cell
+            }
+            return UITableViewCell()
         }
-        return UITableViewCell()
-
-    }
     
 }
 
