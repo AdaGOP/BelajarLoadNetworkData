@@ -1,0 +1,73 @@
+{
+    "status": 200,
+    "type": "stack",
+    "data": {
+        "summary": {
+            "total_cases": 13617360,
+            "active_cases": 4997374,
+            "deaths": 583710,
+            "recovered": 8036276,
+            "critical": 59350,
+            "tested": 262099908,
+            "death_ratio": 0.04286513685472074,
+            "recovery_ratio": 0.5901493387851977
+        },
+        "change": {
+            "total_cases": 88284,
+            "active_cases": 8040,
+            "deaths": 2601,
+            "recovered": 77643,
+            "critical": 144,
+            "tested": 1647156,
+            "death_ratio": -0.00008746389938841387,
+            "recovery_ratio": 0.0018879527156686615
+        },
+        "generated_on": 1594826493,
+        "regions": {
+            "usa": {
+                "name": "USA",
+                "iso3166a2": "US",
+                "iso3166a3": "USA",
+                "iso3166numeric": "",
+                "total_cases": 3559713,
+                "active_cases": 1819369,
+                "deaths": 139314,
+                "recovered": 1601030,
+                "critical": 16337,
+                "tested": 44124272,
+                "death_ratio": 0.039136301156862924,
+                "recovery_ratio": 0.449763787136772,
+                "change": {
+                    "total_cases": 15807,
+                    "active_cases": 5242,
+                    "deaths": 195,
+                    "recovered": 10370,
+                    "death_ratio": -0.00011953689301762854,
+                    "recovery_ratio": 0.0009200536968895778
+                }
+            },
+            "brazil": {
+                "name": "Brazil",
+                "iso3166a2": "BR",
+                "iso3166a3": "BRA",
+                "iso3166numeric": "",
+                "total_cases": 1933655,
+                "active_cases": 530784,
+                "deaths": 74336,
+                "recovered": 1328535,
+                "critical": 8318,
+                "tested": 4572796,
+                "death_ratio": 0.038443259009492387,
+                "recovery_ratio": 0.6870589634655613,
+                "change": {
+                    "total_cases": 2451,
+                    "active_cases": -2733,
+                    "deaths": 74,
+                    "recovered": 5110,
+                    "death_ratio": -0.000010472445082065907,
+                    "recovery_ratio": 0.0017740324070092406
+                }
+            }
+        }
+    }
+}

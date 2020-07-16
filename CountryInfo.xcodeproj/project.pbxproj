@@ -13,6 +13,11 @@
 		1B9110D924B1C01B00FF258D /* SecondCountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9110D724B1C01B00FF258D /* SecondCountryTableViewCell.swift */; };
 		1B9110DA24B1C01B00FF258D /* SecondCountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B9110D824B1C01B00FF258D /* SecondCountryTableViewCell.xib */; };
 		1B9110DD24B218AC00FF258D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9110DC24B218AC00FF258D /* WebKit.framework */; };
+		1B9BA86524BF559F00CB1A1F /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9BA86424BF559F00CB1A1F /* ForthViewController.swift */; };
+		1B9BA86824BF55BB00CB1A1F /* ForthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA86624BF55BB00CB1A1F /* ForthViewController.storyboard */; };
+		1B9BA86A24BF582400CB1A1F /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9BA86924BF582400CB1A1F /* Summary.swift */; };
+		1B9BA86C24BF676D00CB1A1F /* Quarantine.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA86B24BF5BDC00CB1A1F /* Quarantine.json */; };
+		1B9BA86E24BF6A8C00CB1A1F /* Quarantine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9BA86D24BF6A8C00CB1A1F /* Quarantine.swift */; };
 		1BACB70B24B0F81E0075119F /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACB70924B0F81E0075119F /* CountryTableViewCell.swift */; };
 		1BACB70C24B0F81E0075119F /* CountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BACB70A24B0F81E0075119F /* CountryTableViewCell.xib */; };
 		1BAEDE3E24AF3E7C00523AC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAEDE3D24AF3E7C00523AC2 /* AppDelegate.swift */; };
@@ -36,6 +41,11 @@
 		1B9110D724B1C01B00FF258D /* SecondCountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCountryTableViewCell.swift; sourceTree = "<group>"; };
 		1B9110D824B1C01B00FF258D /* SecondCountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCountryTableViewCell.xib; sourceTree = "<group>"; };
 		1B9110DC24B218AC00FF258D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		1B9BA86424BF559F00CB1A1F /* ForthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
+		1B9BA86724BF55BB00CB1A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CountryInfo/View/Base.lproj/ForthViewController.storyboard; sourceTree = "<group>"; };
+		1B9BA86924BF582400CB1A1F /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
+		1B9BA86B24BF5BDC00CB1A1F /* Quarantine.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Quarantine.json; sourceTree = "<group>"; };
+		1B9BA86D24BF6A8C00CB1A1F /* Quarantine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quarantine.swift; sourceTree = "<group>"; };
 		1BACB70924B0F81E0075119F /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		1BACB70A24B0F81E0075119F /* CountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableViewCell.xib; sourceTree = "<group>"; };
 		1BAEDE3A24AF3E7C00523AC2 /* CountryInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +85,7 @@
 				1B9110CD24B1A19700FF258D /* SecondViewController.swift */,
 				1BF58A3124B5ED260057F109 /* ThirdViewController.swift */,
 				1BF58A3524B631780057F109 /* ThirdDetailViewController.swift */,
+				1B9BA86424BF559F00CB1A1F /* ForthViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -89,6 +100,7 @@
 				1BACB70A24B0F81E0075119F /* CountryTableViewCell.xib */,
 				1B9110D824B1C01B00FF258D /* SecondCountryTableViewCell.xib */,
 				1BF58A2E24B5ECD90057F109 /* ThirdViewController.storyboard */,
+				1B9BA86624BF55BB00CB1A1F /* ForthViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				1BAEDE5124AF407000523AC2 /* CountryModel.swift */,
+				1B9BA86924BF582400CB1A1F /* Summary.swift */,
+				1B9BA86D24BF6A8C00CB1A1F /* Quarantine.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,6 +147,7 @@
 				1B9110D024B1A1C400FF258D /* View */,
 				1B9110CF24B1A1B200FF258D /* Controller */,
 				1BAEDE5324AF4A3500523AC2 /* Countries.json */,
+				1B9BA86B24BF5BDC00CB1A1F /* Quarantine.json */,
 				1BAEDE3D24AF3E7C00523AC2 /* AppDelegate.swift */,
 				1BAEDE3F24AF3E7C00523AC2 /* SceneDelegate.swift */,
 				1BAEDE4624AF3E7F00523AC2 /* Assets.xcassets */,
@@ -201,12 +216,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BAEDE4A24AF3E7F00523AC2 /* LaunchScreen.storyboard in Resources */,
+				1B9BA86824BF55BB00CB1A1F /* ForthViewController.storyboard in Resources */,
 				1B9110D624B1A46800FF258D /* SecondCountryTable.storyboard in Resources */,
 				1BAEDE4724AF3E7F00523AC2 /* Assets.xcassets in Resources */,
 				1B9110DA24B1C01B00FF258D /* SecondCountryTableViewCell.xib in Resources */,
 				1BACB70C24B0F81E0075119F /* CountryTableViewCell.xib in Resources */,
 				1B9110D424B1A42D00FF258D /* FirstCountryTable.storyboard in Resources */,
 				1BF58A3024B5ECD90057F109 /* ThirdViewController.storyboard in Resources */,
+				1B9BA86C24BF676D00CB1A1F /* Quarantine.json in Resources */,
 				1BD4825724B0E1D50084259D /* Countries.json in Resources */,
 				1BAEDE4524AF3E7C00523AC2 /* Main.storyboard in Resources */,
 			);
@@ -220,6 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BAEDE4224AF3E7C00523AC2 /* FirstViewController.swift in Sources */,
+				1B9BA86E24BF6A8C00CB1A1F /* Quarantine.swift in Sources */,
+				1B9BA86524BF559F00CB1A1F /* ForthViewController.swift in Sources */,
 				1BAEDE3E24AF3E7C00523AC2 /* AppDelegate.swift in Sources */,
 				1BAEDE5224AF407000523AC2 /* CountryModel.swift in Sources */,
 				1B9110CE24B1A19700FF258D /* SecondViewController.swift in Sources */,
@@ -228,6 +247,7 @@
 				1BACB70B24B0F81E0075119F /* CountryTableViewCell.swift in Sources */,
 				1BF58A3224B5ED260057F109 /* ThirdViewController.swift in Sources */,
 				1BF58A3424B612E20057F109 /* APIService.swift in Sources */,
+				1B9BA86A24BF582400CB1A1F /* Summary.swift in Sources */,
 				1B9110D924B1C01B00FF258D /* SecondCountryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +261,14 @@
 				1B9110D324B1A42D00FF258D /* Base */,
 			);
 			name = FirstCountryTable.storyboard;
+			sourceTree = "<group>";
+		};
+		1B9BA86624BF55BB00CB1A1F /* ForthViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B9BA86724BF55BB00CB1A1F /* Base */,
+			);
+			name = ForthViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		1BAEDE4324AF3E7C00523AC2 /* Main.storyboard */ = {
