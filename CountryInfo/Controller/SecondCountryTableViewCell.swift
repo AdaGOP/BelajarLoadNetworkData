@@ -15,7 +15,7 @@ class SecondCountryTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        // Set initialization code
         
         flagWebView.contentMode = .scaleAspectFill
         flagWebView.scrollView.isScrollEnabled = false

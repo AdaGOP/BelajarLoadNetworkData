@@ -14,17 +14,14 @@
 import Foundation
 import CoreLocation
 
+// MARK: - Prepare the enum of Decodable to read data of a given type
+
 enum QuantumValue: Decodable {
-
-//    case int(Int),
+    
     case string(String), double(Double)
-
+    
     init(from decoder: Decoder) throws {
-//        if let int = try? decoder.singleValueContainer().decode(Int.self) {
-//            self = .int(int)
-//            return
-//        }
-
+        
         if let string = try? decoder.singleValueContainer().decode(String.self) {
             self = .string(string)
             return
@@ -34,20 +31,19 @@ enum QuantumValue: Decodable {
             self = .double(double)
             return
         }
-
+        
         throw QuantumError.missingValue
     }
-
+    
     enum QuantumError:Error {
         case missingValue
     }
 }
 
 extension QuantumValue {
-
+    
     var intValue: Int? {
         switch self {
-//        case .int(let value): return value
         case .string(let value): return Int(value)
         case .double(let value): return Int(value)
         }
@@ -56,14 +52,19 @@ extension QuantumValue {
         switch self {
         case .double(let value): return value
         case .string(let value): return Double(value)
-//        case .int(let value): return Double(value)
-
         }
     }
 }
 
+// MARK: - Analyze and prepare the data structure of CountryModel from the API as a Codable struct
+// which combines the Encodable and Decodable protocols,
+// it will enable to encode or decode the data. This step is analogue for the others struct below
+// To access each of data, we need to declare our key by create the data structure for each
+
 struct CountryModel : Codable {
     
+    
+    // 1 : Prepare the variables provided by API
     let alpha2Code : String?
     let alpha3Code : String?
     let altSpellings : [String]?
@@ -89,6 +90,7 @@ struct CountryModel : Codable {
     let topLevelDomain : [String]?
     let translations : Translation?
     
+    // 2 : Create enum CodingKeys, alternative keys by specifying String as the raw-value type for the CodingKeys enumeration which is the key name used during encoding and decoding. It lets you name your data structures according to the Swift API Design Guidelines rather than having to match the names, punctuation, and capitalization of the serialization format you're modeling.
     enum CodingKeys: String, CodingKey {
         case alpha2Code = "alpha2Code"
         case alpha3Code = "alpha3Code"
@@ -116,8 +118,10 @@ struct CountryModel : Codable {
         case translations = "translations"
     }
     
+    // 3 : By implementing the enum above, we can use a KeyedDecodingContainer Container (by calling the Decoder’s method container<Key>(keyedBy: Key.Type)) to extract the data by converting it into something that we can use in our app:
     init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
+        let values = try decoder.container(keyedBy: CodingKeys.self) // defining our (keyed) container
+        // Extracting each data
         alpha2Code = try values.decodeIfPresent(String.self, forKey: .alpha2Code)
         alpha3Code = try values.decodeIfPresent(String.self, forKey: .alpha3Code)
         altSpellings = try values.decodeIfPresent([String].self, forKey: .altSpellings)
@@ -129,7 +133,7 @@ struct CountryModel : Codable {
         currencies = try values.decodeIfPresent([Currency].self, forKey: .currencies)
         demonym = try values.decodeIfPresent(String.self, forKey: .demonym)
         flag = try values.decodeIfPresent(String.self, forKey: .flag)
-        //                gini = try values.decodeIfPresent(AnyObject.self, forKey: .gini)
+        
         do {
             gini = try values.decodeIfPresent(Double.self, forKey: .gini)
             
@@ -158,6 +162,7 @@ struct CountryModel : Codable {
     
 }
 
+// MARK: - Analyze and prepare the data structure of Translation from the API as a Codable struct
 
 struct Translation : Codable {
     
@@ -201,6 +206,7 @@ struct Translation : Codable {
     
 }
 
+// MARK: - Analyze and prepare the data structure of RegionalBloc from the API as a Codable struct
 
 struct RegionalBloc : Codable {
     
@@ -225,13 +231,14 @@ struct RegionalBloc : Codable {
             otherAcronyms = try values.decodeIfPresent([String].self, forKey: .otherAcronyms)
         } catch {
             // You may want to throw here if you don't want to default the value(in the case that it you can't have an optional).
-            otherAcronyms = nil 
+            otherAcronyms = nil
         }
         otherNames = try values.decodeIfPresent([String].self, forKey: .otherNames)
     }
     
 }
 
+// MARK: - Analyze and prepare the data structure of Language from the API as a Codable struct
 
 struct Language : Codable {
     
@@ -257,6 +264,7 @@ struct Language : Codable {
     
 }
 
+// MARK: - Analyze and prepare the data structure of Currency from the API as a Codable struct
 
 struct Currency : Codable {
     
@@ -273,7 +281,6 @@ struct Currency : Codable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         code = try values.decodeIfPresent(String.self, forKey: .code)
-        //name = try values.decodeIfPresent(AnyObject.self, forKey: .name)
         do {
             name = try values.decodeIfPresent(Double.self, forKey: .name)
             
@@ -286,7 +293,7 @@ struct Currency : Codable {
                 name = nil
             }
         }
-        //symbol = try values.decodeIfPresent(AnyObject.self, forKey: .symbol)
+        
         do {
             symbol = try values.decodeIfPresent(Double.self, forKey: .symbol)
             

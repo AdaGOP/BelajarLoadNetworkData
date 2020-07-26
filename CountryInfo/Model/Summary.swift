@@ -7,6 +7,9 @@
 //
 
 import Foundation
+// MARK: - This is how to analyze the data from API
+// copy-paste the sample of the data we get, create the variables based on those sample
+// if u don' wanna do this, you can use https://app.quicktype.io
 
 //{
 //  "total_cases": 13617360,
